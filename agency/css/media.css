@@ -3,24 +3,13 @@
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  .header_content h1 {
-    font-size: 37px; }
+  .services {
+    text-align: center; }
+    .services .p_left {
+      margin-right: 0; }
 
-  .info {
-    margin-top: 20px; }
-
-  .contacts textarea, .contacts .button {
-    width: 100%; }
-
-  .tips .tips_mail input {
-    width: 45%; }
-  .tips h2 {
-    font-size: 29px; }
-
-  .team .team_descr {
-    width: 100%; }
-  .team .s_descr::after {
-    left: 11%; } }
+  .button_md {
+    margin-bottom: 25px; } }
 /* Small Devices, Tablets */
 /* Extra Small Devices, Phones */
 /* Custom, iPhone Retina */
