@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Agency</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="shortcut icon" href="img/agent-icon.png" type="image/x-icon">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/vars.css">
@@ -16,7 +17,7 @@
 			<div class = "row">
 				<div class="clearfix">
 					<div class = "main_menu col-md-12">
-						<nav>
+						<nav class = "hidden-sm">
 							<ul class = "dark">
 								<li>Home</li>
 								<li id = "about">About us</li>
@@ -24,15 +25,28 @@
 								<li id = "contact">Contact</li>
 							</ul>
 						</nav>
+						<!-- <a href="#" class="toggle-mnu hidden-lg"><span></span></a> -->
 					</div>
+<!-- 					<div class="col-xs-12">
+						<nav class="main-mnu hidden-mnu hidden-lg">
+							<ul>
+								<li class="active"><a href="#">Главная</a></li>
+								<li><a href="#">Новости</a></li>
+								<li><a href="#">Галерея</a></li>
+								<li><a href="#">Партнеры</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</nav>
+					</div> -->
 				</div>
 				<div class = "header_content pad clearfix">
-					<div class = "col-md-6 col-sm-6 col-xs-6">
+					<div class = "col-md-6 col-sm-12 col-xs-12">
 						<h1>Our strong organization</h1>
 						<p class = "light_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum laboriosam alias eveniet aut consequuntur, rem ut non eius, voluptatum repellendus repudiandae odio quos enim nisi commodi corporis ipsam? In, quam.</p>
 						<a href="#" class="button">Contact us</a>
+
 					</div>
-					<div class = "col-md-6 col-sm-6 col-xs-6">
+					<div class = "col-md-6 hidden-xs hidden-sm">
 						<img src="img/org.jpg" alt="alt">
 					</div>
 				</div>	
@@ -43,26 +57,30 @@
 		<div class="container">
 			<div class="row">
 				<div class = "services pad clearfix">
-					<div class = "col-md-6 col-sm-6 col-xs-6">
+					<div class = "col-md-6 col-sm-12">
 						<h2>Do you know we can provide for you?</h2>
 						<p class = "p_left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur laudantium quo illo ea praesentium quisquam delectus temporibus magni, accusamus rem quod, iusto, suscipit reprehenderit. Excepturi aliquam nemo consequatur ut, esse.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores delectus velit cupiditate, fugiat facere blanditiis nostrum ducimus iure omnis amet consequuntur repellendus corporis tempore optio enim impedit odio at incidunt.</p>
 						<a class = "button_md" href="#">Learn More</a>						
 					</div>
-					<div class = "col-md-3 col-sm-3 col-xs-3">
-						<i class="fa fa-cog" aria-hidden="true"></i>
-						<h3>Management</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias itaque ipsum magni, dolorem, ex molestiae beatae vero odio sit autem rerum culpa est nisi voluptatem non dolores. Cum, excepturi, debitis.</p>
-						<i class="fa fa-diamond" aria-hidden="true"></i>
-						<h3>Logo/Brending</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sed aliquam laboriosam accusantium, sequi ex ipsum eaque quisquam adipisci. Omnis voluptatum provident explicabo voluptatibus ut, culpa tenetur velit, nemo unde?</p>
+					<div class = "col-md-3 col-sm-12">
+						<div class="services">
+							<i class="fa fa-cog" aria-hidden="true"></i>
+							<h3>Management</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias itaque ipsum magni, dolorem, ex molestiae beatae vero odio sit autem rerum culpa est nisi voluptatem non dolores. Cum, excepturi, debitis.</p>
+							<i class="fa fa-diamond" aria-hidden="true"></i>
+							<h3>Logo/Brending</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sed aliquam laboriosam accusantium, sequi ex ipsum eaque quisquam adipisci. Omnis voluptatum provident explicabo voluptatibus ut, culpa tenetur velit, nemo unde?</p>
+						</div>
 					</div>
-					<div class = "col-md-3 col-sm-3 col-xs-3">
-						<i class="fa fa-pencil" aria-hidden="true"></i>
-						<h3>UI/UX Design</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias itaque ipsum magni, dolorem, ex molestiae beatae vero odio sit autem rerum culpa est nisi voluptatem non dolores. Cum, excepturi, debitis.</p>
-						<i class="fa fa-car" aria-hidden="true"></i>
-						<h3>Animation</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia quidem quas, dolor cum at molestiae voluptas voluptatibus numquam error enim ab ratione recusandae veritatis assumenda eaque nobis sit, soluta dignissimos.</p>
+					<div class = "col-md-3 col-sm-12">
+						<div class="services">
+							<i class="fa fa-pencil" aria-hidden="true"></i>
+							<h3>UI/UX Design</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias itaque ipsum magni, dolorem, ex molestiae beatae vero odio sit autem rerum culpa est nisi voluptatem non dolores. Cum, excepturi, debitis.</p>
+							<i class="fa fa-car" aria-hidden="true"></i>
+							<h3>Animation</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia quidem quas, dolor cum at molestiae voluptas voluptatibus numquam error enim ab ratione recusandae veritatis assumenda eaque nobis sit, soluta dignissimos.</p>
+						</div>					
 					</div>
 				</div>
 			</div>
@@ -88,90 +106,29 @@
 					</ul>
 					</div>	
 					<div id="products_grid">
-						<div class="mix col-md-3 col-sm-3 col-xs-6 products_item category_1">
+						<div class="mix col-md-3 col-sm-6 products_item category_1">
 							<img src="img/portfolio-images/2.jpg" alt="alt">
 						</div>
-						<div class="mix col-md-3 col-sm-3 col-xs-6 products_item category_2">
+						<div class="mix col-md-3 col-sm-6 products_item category_2">
 							<img src="img/portfolio-images/1.jpg" alt="alt">
 						</div>
-						<div class="mix col-md-3 col-sm-3 col-xs-6 products_item category_1">
+						<div class="mix col-md-3 col-sm-6 products_item category_1">
 							<img src="img/portfolio-images/4.jpg" alt="alt">
 						</div>
-						<div class="mix col-md-3 col-sm-3 col-xs-6 products_item category_2">
+						<div class="mix col-md-3 col-sm-6 products_item category_2">
 							<img src="img/portfolio-images/3.jpg" alt="alt">
 						</div>
-						<div class="mix col-md-3 col-sm-3 col-xs-6 products_item category_3">
-							<img src="img/portfolio-images/4.jpg" alt="alt">
+						<div class="mix col-md-3 col-sm-6 products_item category_3">
+							<img src="img/portfolio-images/1.jpg" alt="alt">
 						</div>
-						<div class="mix col-md-3 col-sm-3 col-xs-6 products_item category_4">
+						<div class="mix col-md-3 col-sm-6 products_item category_4">
 							<img src="img/portfolio-images/5.jpg" alt="alt">
 						</div>
-						<div class="mix col-md-3 col-sm-3 col-xs-6 products_item category_3">
+						<div class="mix col-md-3 col-sm-6 products_item category_3">
 							<img src="img/portfolio-images/2.jpg" alt="alt">
 						</div>
-						<div class="mix col-md-3 col-sm-3 col-xs-6 products_item category_4">
+						<div class="mix col-md-3 col-sm-6 products_item category_4">
 							<img src="img/portfolio-images/6.jpg" alt="alt">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class = "team pad">
-		<div class="container">
-			<div class="row">
-				<div class="about_team clearfix">
-					<div class="col-md-12 col-sm-12 col-xs-12">
-						<div class = "team_descr">
-							<h2>Meet our team</h2>
-							<div class="s_descr_wrap">
-								<div class="s_descr">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis cupiditate, sed modi iste. Dolorum nam sit voluptatem, explicabo veritatis nobis perspiciatis.
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-3 col-xs-3">
-						<img src="img/team/1.jpg" alt="alt">
-					</div>
-					<div class="col-md-9 col-sm-9 col-xs-9">
-						<h3>Mark Waugh</h3>
-						<div class = "name_descr">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit ad, porro, sapiente atque nesciunt dolorum asperiores blanditiis inventore pariatur necessitatibus eveniet at repellendus tempora quasi assumenda commodi accusantium unde! Dignissimos.</p>
-						</div>
-						<div class="social">
-							<ul>
-								<li><a href="#">Facebook</a></li>
-								<li><a href="">Dribbble</a></li>
-								<li><a href="">Behance</a></li>
-								<li><a href="">Twitter</a></li>
-							</ul>
-						</div>
-						<div class = "team_photo">
-							<div>
-								<img src="img/team/2.jpg" alt="alt">
-								<div class="port_item_cont">
-									<h3>Name</h3>							
-								</div>
-							</div>
-							<div>
-								<img src="img/team/3.jpg" alt="alt">
-								<div class="port_item_cont">
-									<h3>Name</h3>							
-								</div>
-							</div>
-							<div>
-								<img src="img/team/4.jpg" alt="alt">
-								<div class="port_item_cont">
-									<h3>Name</h3>							
-								</div>
-							</div>
-							<div>
-								<img src="img/team/5.jpg" alt="alt">
-								<div class="port_item_cont">
-									<h3>Name</h3>							
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -185,7 +142,7 @@
 					<div class= "tips_mail">
 						<h2>Design tips, tricks, and freebies. Delivered weekly.</h2>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						<p><input type="email" placeholder="Email address..." required><a href="#" class="button">Subscribe</a></p>
+						<p><input type="text" placeholder="Email address..."><a href="#" class="button">Subscribe</a></p>
 					</div>
 				</div>
 			</div>
@@ -202,16 +159,13 @@
 						</div>
 					</div>
 					<input type="text" placeholder="Name">
-					<input type="text" placeholder="Your mail">
+					<input type="email" placeholder="Your mail">
 					<textarea placeholder = "Type your message" cols="30" rows="10"></textarea>
 					<a href="#" class="button">Send message</a>
 				</div>
 				<div class="col-md-5 col-sm-12 col-xs-5">
-					<div class="info dark">
-						<h3>Contact info</h3>
-						<p>alalabad, 24/A, Abaarkhana, Sylhet, Bangladesh</p>
-						<p>egor.grighorchuk@gmail.com</p>
-						<p>(+88) 017-617-46373</p>
+					<div class="map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1948191.5121191572!2d90.51687238967212!3d24.04025779768042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1516715944336" frameborder="0" style="border:0" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
@@ -225,14 +179,12 @@
 				</div>
 				<div class="col-md-5 col-sm-5 col-xs-5">
 					<div class="social_wrap">
-						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+						<a href="https://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="https://linkedin.com"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+						<a href="https://facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="https://plus.google.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
 					</div>
-					
 				</div>
-
 			</div>
 		</div>
 	</footer>
@@ -240,5 +192,11 @@
 	<script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
 	<script src="libs/mixitup/mixitup.min.js"></script>
 	<script src="js/common.js"></script>
+	<script>
+		$(".toggle-mnu").click(function() {
+		$(this).toggleClass("on");
+		$(this).parent().next().next().find(".main-mnu").slideToggle();
+		return false;
+	});</script>
 </body>
 </html>
