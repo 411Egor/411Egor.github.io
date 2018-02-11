@@ -21,5 +21,10 @@ $(".scroll").click(function() {
 				$(".top").removeClass("active");
 			}
 		});
+	$(".portfolio-item, a[href='#callback']").magnificPopup({
+		mainClass: 'my-mfp-zoom-in',
+		removalDelay: 300,
+		type: 'inline',
+	});
 
 });

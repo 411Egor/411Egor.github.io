@@ -1,0 +1,72 @@
+Remember that you can report errors and get help in https://github.com/NicoSantangelo/sublime-gulp
+
+02-02-2018 15:28:
+C:\Users\user1\Desktop\miningserv\.sublime-gulp-tmp.js:9
+gulp.task('browser-sync', ['styles', 'scripts'], function() {
+    ^
+
+SyntaxError: Unexpected token .
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:599:28)
+    at Object.Module._extensions..js (module.js:646:10)
+    at Module.load (module.js:554:32)
+    at tryModuleLoad (module.js:497:12)
+    at Function.Module._load (module.js:489:3)
+    at Module.require (module.js:579:17)
+    at require (internal/module.js:11:18)
+    at requireGulp (C:\Users\user1\AppData\Roaming\Sublime Text 3\Packages\Gulp\write_tasks_to_cache.js:28:16)
+
+
+02-02-2018 15:32:
+C:\Users\user1\Desktop\miningserv\.sublime-gulp-tmp.js:9
+gulp.task('browser-sync', ['styles', 'scripts'], function() {
+    ^
+
+SyntaxError: Unexpected token .
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:599:28)
+    at Object.Module._extensions..js (module.js:646:10)
+    at Module.load (module.js:554:32)
+    at tryModuleLoad (module.js:497:12)
+    at Function.Module._load (module.js:489:3)
+    at Module.require (module.js:579:17)
+    at require (internal/module.js:11:18)
+    at requireGulp (C:\Users\user1\AppData\Roaming\Sublime Text 3\Packages\Gulp\write_tasks_to_cache.js:28:16)
+
+
+02-02-2018 15:33:
+C:\Users\user1\AppData\Roaming\Sublime Text 3\Packages\Gulp\write_tasks_to_cache.js:31
+        throw ex;
+        ^
+
+Error: Cannot find module 'gulp'
+    at Function.Module._resolveFilename (module.js:536:15)
+    at Function.Module._load (module.js:466:25)
+    at Module.require (module.js:579:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\user1\Desktop\miningserv\.sublime-gulp-tmp.js:1:82)
+    at Module._compile (module.js:635:30)
+    at Object.Module._extensions..js (module.js:646:10)
+    at Module.load (module.js:554:32)
+    at tryModuleLoad (module.js:497:12)
+    at Function.Module._load (module.js:489:3)
+
+
+02-02-2018 15:36:
+C:\Users\user1\AppData\Roaming\Sublime Text 3\Packages\Gulp\write_tasks_to_cache.js:31
+        throw ex;
+        ^
+
+Error: Cannot find module 'browser-sync'
+    at Function.Module._resolveFilename (module.js:536:15)
+    at Function.Module._load (module.js:466:25)
+    at Module.require (module.js:579:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (C:\Users\user1\Desktop\miningserv\.sublime-gulp-tmp.js:6:18)
+    at Module._compile (module.js:635:30)
+    at Object.Module._extensions..js (module.js:646:10)
+    at Module.load (module.js:554:32)
+    at tryModuleLoad (module.js:497:12)
+    at Function.Module._load (module.js:489:3)
