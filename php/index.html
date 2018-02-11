@@ -4,23 +4,11 @@
 	<meta charset="UTF-8">
 	<title>Обратная связь</title>
 </head>
-<link rel="stylesheet" href="index.php">
 <body>
-	<h2>Форма обратной связи</h2>
-	<form action="" name="feedback" method="post">
-		<label>От кого: </label>
-		<input type="text" name="from" value = "<?=$_SESSION["from"]?>"> <br>
-		<span style="color:red"><?=$error_from?></span>
-		<label>Кому: </label>
-		<input type="text" name="to" value = "<?=$_SESSION["to"]?>"> <br>
-		<span style="color:red"><?=$error_to?></span>
-		<label>Тема: </label>
-		<input type="text" name="subject" value = "<?=$_SESSION["subject"]?>"> <br>
-		<span style="color:red"><?=$error_subject?></span>
-		<label>Сообщение: </label> <br>
-		<textarea name="message" cols="30" rows="10"><?=$_SESSION["message"]?></textarea> <br>
-		<span style="color:red"><?=$error_message?></span>
-		<input type="submit" name="send" value="отправить">
-	</form>
+<form id="form">
+    <input type="text" name="name" required="required"/>
+    <input type="text" name="phone" required="required"/>
+    <input type="submit" value="Заказать звонок"/>
+</form>
 </body>
 </html>
