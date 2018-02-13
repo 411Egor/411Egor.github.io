@@ -26,5 +26,4 @@ $(".scroll").click(function() {
 		removalDelay: 300,
 		type: 'inline',
 	});
-
 });
