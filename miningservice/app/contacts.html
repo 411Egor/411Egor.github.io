@@ -4,7 +4,7 @@
 
 	<meta charset="utf-8">
 
-	<title>MiningService - Курсы криптовалют на сегодня </title>
+	<title>MiningService - Контакты </title>
 	<meta name="description" content="Курсы криптовалют, биткоин к доллару, лайткоин к доллару, эфир к доллару, биткоин кэш к доллару">
 	
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -26,6 +26,10 @@
 		background-position: top center;
 	}
 
+	h2{
+		margin-top: 35px;
+		font-size: 25px;
+	}
 
 </style>
 
@@ -33,6 +37,7 @@
 <body>
 		<nav id="menu">
 		<div class="coinmarketcap-currency-widget"  data-currency="bitcoin" data-base="USD" data-secondary="" data-ticker="false" data-rank="false" data-marketcap="false" data-volume="false" data-stats="USD" data-statsticker="false"></div>
+		<div class="coinmarketcap-currency-widget"  data-currency="ethereum" data-base="USD" data-secondary="" data-ticker="false" data-rank="false" data-marketcap="false" data-volume="false" data-stats="USD" data-statsticker="false"></div>
 
 		<ul>
 			<li><a href="index.html"><h3>Главная</h3></a></li>
@@ -43,8 +48,8 @@
 		</ul>
 	</nav>
 	<main id="panel">
-		<header class = "main_head">
-			<div class="shadow_wrap">
+		<header class = "main_head isnohome">
+			<div class="shadow_wrap isnohome">
 				<div class="container">
 					<div class="row">
 						<div class = "mnu_line clearfix">
@@ -72,7 +77,7 @@
 				</div>
 			</div>
 		</header>
-	<section id="contacts" class = "contacts">
+		<section id="contacts" class = "contacts">
 		<div class="container">
 			<div class="row">
 				<h2>Обратная связь</h2>
@@ -144,6 +149,11 @@
 		'padding': 256,
 		'tolerance': 70
 	});
-</script>
+
+			// Toggle button
+			document.querySelector('.toggle-mnu').addEventListener('click', function() {
+				slideout.toggle();
+			});
+		</script>
 </body>
 </html>
