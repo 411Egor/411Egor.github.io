@@ -1,15 +1,8 @@
 /*==========  Desktop First Method  ==========*/
 
 
-
-
-
-
-
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	.header_content
-		width: 80%
 	.contacts
 		padding-bottom: 35px
 	footer
@@ -23,10 +16,15 @@
 	.map
 		margin-bottom: 30px
 
+@media only screen and (max-width : 850px)
+	.map
+		margin-bottom: 30px
+
+
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	.header_content
-		width: 90%
+	.top_wrapper
 		h1
 			font-size: 32px
 	.graphics-h1
@@ -35,23 +33,16 @@
 
 /* Custom Media Queries */
 @media only screen and (max-width : 600px)
-	.header_content
+	.top_wrapper
 		h1
 			font-size: 27px
 
 
-
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	.header_content
-		width: 100%
+	.top_wrapper
 		h1
 			font-size: 23px
-	.monitoring
-		.bg_imac
-			height: 135px
-			width: 91%
-			top: 9px
 				
 
 /* Custom, iPhone Retina */
