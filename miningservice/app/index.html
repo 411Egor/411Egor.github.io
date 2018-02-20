@@ -12,10 +12,12 @@
 	<meta name="MobileOptimized" content="320">
 	<meta name="HandheldFriendly" content="True">
 	<meta name="apple-mobile-web-app-capable" content="yes">
+	
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
 	<link rel="canonical" href="https://411egor.github.io/miningservice/app/index.html">
 	<link rel="stylesheet" href="libs/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -24,6 +26,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 	<link rel="stylesheet" href="libs/mfp/magnific-popup.css">
+	<link rel="stylesheet" href="libs/animatecss/animate-min.css">
 </head>
 
 <body>
@@ -39,7 +42,7 @@
 		</ul>
 	</nav>
 	<main id="panel">
-		<header class = "main_head">
+		<header class = "main_head" data-parallax="scroll" data-image-src="img/bg.jpg" data-z-index="0">
 			<div class="shadow_wrap">
 				<div class="container">
 					<div class="row">
@@ -67,9 +70,9 @@
 						<div class="top_wrapper">
 							<div class="top_descr">
 								<div class="top_centred">
-									<h1>Установка и обслуживание<br>майнинг-ферм</h1>
-									<a href="#callback" class="button">Отправить заявку</a>	
-									<div id="section07" class="demo">
+									<h1 class = "animated fadeInDown">Установка и обслуживание<br>майнинг-ферм</h1>
+									<a href="#callback" class="button animated fadeInUp">Отправить заявку</a>	
+									<div id="section07" class="demo animated fadeInUp">
 									<div class="scroll">
 										<span></span><span></span><span></span>
 									</div>
@@ -717,7 +720,7 @@
 						</g>
 					</svg>
 				</div>
-				<h3>БОЛЕЕ <span >2</span> ЛЕТ МАЙНИНГА</h3>
+				<h3>БОЛЕЕ 2 ЛЕТ МАЙНИНГА</h3>
 			</div>
 		</div>
 		<div class="col-sm-6 col-md-3">
@@ -772,7 +775,7 @@
 					</g>
 				</svg>
 			</div>
-			<h3>БОЛЕЕ <span>400</span> ОБСЛУЖЕННЫХ КЛИЕНТОВ</h3>
+			<h3>БОЛЕЕ 400 ОБСЛУЖЕННЫХ КЛИЕНТОВ</h3>
 		</div>
 	</div>
 	<div class="col-sm-6 col-md-3">
@@ -858,7 +861,7 @@
 				</g>
 			</svg>
 		</div>
-		<h3><span class = "count">293</span> УСТАНОВЛЕННЫХ ФЕРМ</h3>
+		<h3>293 УСТАНОВЛЕННЫХ ФЕРМ</h3>
 	</div>
 </div>
 <div class="col-sm-6 col-md-3">
@@ -1010,7 +1013,7 @@
 			</g>
 		</svg>
 	</div>
-	<h3><span class = "count">400</span> ВЫПОЛНЕННЫХ ОПЕРАЦИЙ С КРИПТОВАЛЮТОЙ</h3>
+	<h3>400 ВЫПОЛНЕННЫХ ОПЕРАЦИЙ С КРИПТОВАЛЮТОЙ</h3>
 </div>
 </div>
 </div>
@@ -1172,6 +1175,7 @@
 <script src="libs/pagescroll/PageScroll2id.min.js"></script>
 <script src="libs/mfp/jquery.magnific-popup.min.js"></script>
 <script src="js/common.js"></script>
+<script src="js/parallax.min.js"></script>
 <script>
 	var slideout = new Slideout({
 		'panel': document.getElementById('panel'),

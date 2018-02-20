@@ -31,21 +31,20 @@ img
 	pointer-events: none
 	user-select: none
 
-
+svg
+	width: 70px
+	height: 70px
 
 
 .shadow_wrap
 	min-height: 100vh
 	background-color: rgba(0, 0, 0, 0.6)
-	z-index: 10
 
 .main_head
-	background-image: url('../img/bg.jpg')
 	background-size: cover
 	background-position: center
 	overflow: hidden
 	min-height: 100vh
-	z-index: 10
 
 .isnohome
 	min-height: 0
@@ -76,7 +75,8 @@ img
 			padding: 0 30px
 			&:hover
 				color: $accent
-				transition: all .2s ease
+				text-decoration: none
+				transition: all .1s ease
 
 .top_wrapper
 	width: 50%
@@ -117,8 +117,6 @@ img
 	text-align: center
 	margin-top: 50px
 	svg
-		width: 70px
-		height: 70px
 		fill: $accent
 
 .adv
@@ -129,8 +127,6 @@ img
 	h3
 		margin-top: 12px	
 	svg
-		width: 70px
-		height: 70px
 		fill: $light_text
 	.adv_wrap
 		text-align: center								
@@ -509,6 +505,7 @@ footer
 	h1
 		margin-bottom: 35px
 	.hotel-descr
-		padding: 0 35px
-		p
-			font-size: 18px				
+		list-style-type: none
+		h2
+			text-align: left	
+
