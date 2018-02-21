@@ -17,21 +17,24 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-	
+
 	<link rel="stylesheet" href="libs/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/media.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 	<link rel="stylesheet" href="libs/mfp/magnific-popup.css">
 	<link rel="stylesheet" href="libs/animatecss/animate-min.css">
+
+	<style>.shadow_wrap{min-height:100vh;background-color:rgba(0,0,0,0.6)}.main_head{background-size:cover;background-position:center;overflow:hidden;min-height:100vh}.mnu_line{position:relative;z-index:100;text-align:center;padding-top:30px}.mnu_line img{position:relative;top:-15px}.mnu_line .logo{display:inline-block}.main_mnu ul{text-align:right;padding-left:0;margin:auto;padding-top:10px}.main_mnu ul li{display:inline-block;list-style-type:none}.main_mnu ul a{color:#fff;font-size:17px;padding:0 30px}.main_mnu ul a:hover{color:#02a6ff;text-decoration:none;transition:all .1s ease}.top_wrapper{width:50%}.top_wrapper h1{margin-bottom:12px;color:#fff;line-height:1.3}.top_wrapper{min-height:100vh;display:table;width:100%;height:100%;position:absolute;top:0;left:0}.top_wrapper .top_descr{display:table-row}.top_wrapper .top_descr .top_centred{display:table-cell;text-align:center;vertical-align:middle}.top_wrapper .top_descr .top_centred .scroll{vertical-align:bottom}.button{display:inline-block;border:none;background-color:#02a6ff;color:#fff;font-size:14px;text-transform:uppercase;padding:10px 30px;border-radius:3px;transition:all .15s ease}.button:hover,.button:focus{color:#ffff;text-decoration:none}#section07 .scroll:hover{cursor:pointer}#section07 span{position:absolute;top:0;left:50%;width:24px;height:24px;margin-left:-12px;border-left:1px solid #fff;border-bottom:1px solid #fff;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:sdb07 2s infinite;animation:sdb07 2s infinite;opacity:0;box-sizing:border-box}#section07 span:nth-of-type(1){-webkit-animation-delay:0s;animation-delay:0s}#section07 span:nth-of-type(2){top:16px;-webkit-animation-delay:.15s;animation-delay:.15s}#section07 span:nth-of-type(3){top:32px;-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes sdb07{0%{opacity:0}50%{opacity:1}100%{opacity:0}}@keyframes sdb07{0%{opacity:0}50%{opacity:1}100%{opacity:0}}.demo .scroll{display:inline-block;-webkit-transform:translate(0, -50%);transform:translate(0, -50%)}
+	</style>
+
 </head>
 
 <body>
 	<nav id="menu">
-		<div class="coinmarketcap-currency-widget"  data-currency="bitcoin" data-base="USD" data-secondary="" data-ticker="false" data-rank="false" data-marketcap="false" data-volume="false" data-stats="USD" data-statsticker="false"></div>
-		<div class="coinmarketcap-currency-widget"  data-currency="ethereum" data-base="USD" data-secondary="" data-ticker="false" data-rank="false" data-marketcap="false" data-volume="false" data-stats="USD" data-statsticker="false"></div>
+		<div class="coinmarketcap-currency-widget" data-currencyid="1" data-base="USD"  data-ticker="true" data-rank="false" data-marketcap="false" data-volume="false" data-stats="USD" data-statsticker="false"></div>
+		<div class="coinmarketcap-currency-widget" data-currencyid="1027" data-base="USD" data-rank="false" data-marketcap="false" data-volume="false" data-stats="USD"></div>
 		<ul>
 			<li><a href="index.html"><h3>Главная</h3></a></li>
 			<li><a href="#services"><h3>Услуги</h3></a></li>
@@ -1167,14 +1170,12 @@
 	</form>
 </div>
 
-<script src="js/currency.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src= "js/bootstrap.min.js"></script>
-<script src="libs/dist/slideout.min.js"></script>
-<script src="libs/pagescroll/PageScroll2id.min.js"></script>
-<script src="libs/mfp/jquery.magnific-popup.min.js"></script>
-<script src="js/common.js"></script>
-<script src="js/parallax.min.js"></script>
+<script src = "js/currency.js"></script>
+<script src = "js/min/libs.min.js"></script>
+<script src = "js/min/min.js"></script>
+
+	
+
 <script>
 	var slideout = new Slideout({
 		'panel': document.getElementById('panel'),
