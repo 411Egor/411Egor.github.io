@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";;;;AAUA,yCAA0C;EAyBzC,SAAS;IACR,UAAU,EAAE,MAAM;IAClB,iBAAO;MACN,YAAY,EAAE,CAAC;;EACjB,UAAU;IACT,aAAa,EAAE,IAAI;;;;AAYrB,yCAA0C;;;;AAO1C,yCAA0C;;;AAK1C,yCAA0C;;;AAK1C,yCAA0C;;;AAK1C,yCAA0C;;;AAK1C,0CAA2C",
-"sources": ["../sass/media.sass"],
-"names": [],
-"file": "media.css"
-}
