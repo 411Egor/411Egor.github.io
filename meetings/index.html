@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>App Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+    <script src="vendors/jquery.easings.min.js"></script>
+
+
+    <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+    <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    
+</head>
+<body>
+    <div id="fullpage">
+    	<div class="section">
+    		<div class="landing">
+    			<div class="landingWrapper">
+    				<div class="nav">
+    					<a href="#"><img class="logo" src="images/logo.png" alt="logo"></a>
+    					<div class="pages">
+    						<a href="#">How it Works</a>
+    						<a href="#">App Features</a>
+    						<a href="#">About Us</a>
+    						<a href="#" class="btnOne">Sign Up</a>
+    					</div>
+    				</div>
+    					<div class="landingContent">
+    						<div class="contentLeft">
+    							<h1>Work Better Together, Schedule <br>Meetings In An Instant</h1>
+    							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non delectus, recusandae labore omnis tempora laudantium ab molestiae pariatur! Explicabo cumque nisi et? Quisquam sequi unde itaque aspernatur dolore natus doloremque!</p>
+    							<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Которой lorem рот, которое. Необходимыми лучше что решила мир заманивший они буквоград семантика меня грустный, там однажды своего имени языкового.</p>
+    							<a href="#" class="btnTwo">Download App</a>
+    						</div>
+    						<div class="contentRight">
+    							<img class = "iphoneHand" src="images/iphoneX_inHand.png" alt="iphone x">
+    						</div>
+    					</div>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="section">
+    		<div class="features">
+    			<div class="date">
+    				<img src="images/cal_icon.png" alt="date">
+    				<h1>Easily Set The Date</h1>
+    				<p>Access to your personal calendar lets you check <br>for open schedule dates.</p>
+    			</div>
+    			<div class="time">
+    				<img src="images/clock_icon.png" alt="clock">
+						<h1>Running Late?</h1>
+						<p>Set the meeting time. If you evere need to <br>delay, all members of the meetings will be <br>notified immediatly.</p>
+    			</div>
+    		</div>
+    	</div>
+    		<div class="section">
+    			<div class="groups">
+    				<div class="groupsWrapper">
+    					<div class="groupsContent">
+    						<div class="contentLeft">
+    							<img src="images/search_icon.png" alt="search icon">
+    							<h1>Search Groups and Friends</h1>
+    							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde eligendi eaque corporis sit impedit voluptatum praesentium, ducimus et odio qui neque rerum dolor, error asperiores deleniti perferendis hic a perspiciatis.</p>
+    							<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Свое все переписывается приставка ее маленькая, свой семь даже строчка рукопись раз ipsum города журчит власти единственное моей запятых переписали!</p>
+    						</div>
+    						<div class="contentRight">
+    							<img class = "groupsImage" src="images/people_groups.png" alt="">
+    						</div>
+    					</div>
+    					<div class="footer">
+    						<p>&copy; 2018 Meetings</p>
+    						<div class="pagesRight">
+  							<a href="#"><p>Terms</p></a>
+  							<a href="#"><p>Privacy</p></a>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+<script>
+	$(document).ready(function() {
+	 $('#fullpage').fullpage();
+	});
+</script>    
+</body> 
+
+</html>
