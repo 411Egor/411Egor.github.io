@@ -1,0 +1,122 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	position: relative
+	line-height: 1.65
+	font-family: "Ubuntu"
+	overflow-x: hidden
+	margin: auto
+
+h1
+	color: #710fc9
+	letter-spacing: 2px
+	margin: 0
+	margin-bottom: 20px
+
+.wrapper
+	width: 320px
+	margin: auto
+	text-align: center
+	padding: 75px 0
+	img
+		width: 80%
+
+.logo p
+	color: #ffac00
+	letter-spacing: 1px
+	font-size: 21px
+	margin-top: 15px
+
+.enter
+	border: 1px solid $accent
+	color: #000
+	letter-spacing: 1px
+	display: block
+	padding: 15px 0
+	letter-spacing: 1px
+	margin-bottom: 20px
+	margin-top: 60px	
+	&:hover,&:focus
+		color: #000
+
+.btn-bg
+	color: #fff
+	background-color: #710fc9
+	letter-spacing: 1px
+	display: block
+	padding: 15px 0
+	&:hover, &:focus
+		color: #fff
+
+.back
+	margin-top: 65px
+	img
+		width: 20%
+
+input
+	width: 100%
+	border: 1px solid #ced6eb
+	margin: 10px 0
+	padding: 15px 0
+	text-indent: 15px
+	border-radius: 3px
+	outline: none
+	letter-spacing: 1px
+	&:focus::placeholder
+		color: #9094a0
+		transition: color .5s ease
+	&::placeholder
+		color: #ced6eb
+
+.access
+	color: #000
+	font-size: 16px
+	letter-spacing: 1px
+	margin-bottom: 26px
+	margin-top: 20px
+	span
+		color: $accent
+
+.load
+	margin: 120px 0  
+	img
+		width: 30%
+@import "media" // Всегда в конце
