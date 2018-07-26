@@ -24,26 +24,33 @@
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
-	<link rel="stylesheet" href="libs/animate-css/animate.css">
 	<link rel="stylesheet" href="css/main.min.css">
 
 </head>
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12">
-				<div class="wrapper">
-					<h1>Поиск водителя</h1>
-					<div class="load">
-						<img class="animated infinite flash" src="img/icons/load.svg" alt="">
+			<div class="wrapper" id="no-pad">
+				<div class="col-xs-12">
+					<div class="input-wrapp example clearfix">
+						<input class="order-input first-input" type="text" placeholder="Откуда">
+						<input class = "entrance" type="text" placeholder="Подъезд">
 					</div>
-					<div class="back">
-						<img src="img/icons/button.svg" alt="">
+					<div class="plus-dot">
+						+ Добавить точку
+					</div>
+					<div class="input-wrapp example where">
+						<input class="order-input" type="text" placeholder="Куда">
 					</div>
 				</div>
 			</div>
-
 		</div>
 	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>	
+<script>
+	document.querySelector('.toggle-button').addEventListener('click', function() {
+        document.querySelector('.menu').style.transform='translateX(0px)'
+      });
+</script>
 </body>
 </html>

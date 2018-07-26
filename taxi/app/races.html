@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+<body>
+	<div class="menu">
+		<div class="container">
+			<div class="row">
+				<div class="menu-wrapp">
+					<img src="img/photo.png" alt="">
+					<div class="name">
+						Александр Чернышев
+					</div>
+					<div class="count">
+						Поездок <span>26</span>
+					</div>
+					<div class="distance">
+						Общее расстояние <span>429</span>
+					</div>
+				</div>
+				<div class="bonus clearfix">
+					<div class="col-xs-12">
+						<div class="bonus-count">Бонусный счет: 10 руб.</div>
+					</div>
+				</div>
+				<ul class="first">
+					<li><img src="img/icons/galka.svg" alt=""><a href="#">Заказ такси</a></li>
+					<li><img src="img/icons/car.svg" alt=""><a href="#">История поездок</a></li>
+					<li><img src="img/icons/car.svg" alt=""><a href="#">Любимые адреса</a></li>
+					<li><img src="img/icons/money.svg" alt=""><a href="#">Способ оплаты</a></li>
+				</ul>
+				<ul class="second">
+					<li><img src="img/icons/settings.svg" alt=""><a href="#">Настройка</a></li>
+					<li><img src="img/icons/rule.svg" alt=""><a href="#">Стать водителем</a></li>
+					<li><img src="img/icons/promo.svg" alt=""><a href="#">Промокод</a></li>
+					<li><img src="img/icons/icon-technical-support.svg" alt=""><a href="#">Техподдержка</a></li>
+					<li><img src="img/icons/out.svg" alt=""><a href="#">Выход</a></li>
+				</ul>	
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="wrapper" id="no-pad">
+				<div class="top-menu-wrapp clearfix">
+					<div class="col-xs-12">
+						<div class="top-menu">
+							<div class="burger">
+								<img src="img/icons/burger.svg" alt="" class="toggle-button">
+							</div>
+							<ul>
+								<li><a href="#">Заказ такси</a></li>
+								<li class = "active"><a href="#">Поездки</a></li>
+							</ul>
+							<div class="dots">
+								<img src="img/icons/icon2.svg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="races-wrapp clearfix">
+						<div class="races-item">
+							<div class="races-head">ул. Свердлова</div>
+							<div class="races-time">Время поездки - <span>10 мин</span></div>
+							<div class="races-bottom">Партизанский просп.</div>
+						</div>
+						<div class="races-count">9 руб.</div>
+						<div class="races-date">25.07.2018 <img src="img/icons/icon3.svg" alt=""></div>
+				</div>
+				<div class="races-wrapp clearfix">
+						<div class="races-item">
+							<div class="races-head">ул. Свердлова</div>
+							<div class="races-time">Время поездки - <span>10 мин</span></div>
+							<div class="races-bottom">Партизанский просп.</div>
+						</div>
+						<div class="races-count">9 руб.</div>
+						<div class="races-date">25.07.2018 <img src="img/icons/icon3.svg" alt=""></div>
+				</div>
+				<div class="races-wrapp clearfix">
+						<div class="races-item">
+							<div class="races-head">ул. Свердлова</div>
+							<div class="races-time">Время поездки - <span>10 мин</span></div>
+							<div class="races-bottom">Партизанский просп.</div>
+						</div>
+						<div class="races-count">9 руб.</div>
+						<div class="races-date">25.07.2018 <img src="img/icons/icon3.svg" alt=""></div>
+				</div>
+				<div class="races-wrapp clearfix">
+						<div class="races-item">
+							<div class="races-head">ул. Свердлова</div>
+							<div class="races-time">Время поездки - <span>10 мин</span></div>
+							<div class="races-bottom">Партизанский просп.</div>
+						</div>
+						<div class="races-count">9 руб.</div>
+						<div class="races-date">25.07.2018 <img src="img/icons/icon3.svg" alt=""></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>	
+<script>
+	document.querySelector('.toggle-button').addEventListener('click', function() {
+        document.querySelector('.menu').style.transform='translateX(0px)'
+      });
+</script>
+</body>
+</html>
