@@ -70,14 +70,68 @@ h1
 	margin-top: 15px
 
 .enter
-	border: 1px solid $accent
-	color: #000
+	background-color: $purple
+	border-radius: 5px
+	color: #fff
 	display: block
 	padding: 15px 0
+	margin: auto
 	margin-bottom: 20px
-	margin-top: 60px	
+	margin-top: 30px
+	width: 80%
+	font-size: 18px
 	&:hover,&:focus
 		color: #000
+
+.enter-inputs
+	a
+		color: $accent
+		text-decoration: underline
+		display: block
+		text-align: right
+	label
+		display: inline-block
+		position: relative
+		float: left
+		color: #d5dbed 	
+		input[type='checkbox']
+			margin-right: 15px
+			display: inline-block
+			vertical-align: middle
+			width: auto
+			text-indent: 0
+		input[type='checkbox']:after
+			font-family: 'times new roman'
+			line-height: 15px
+			position: absolute
+			top: 0
+			margin-top: 5px
+			display: block
+			width: 20px
+			height: 20px
+			content: ''
+			transition: all .1s linear
+			text-align: center
+			color: #fff
+			border: 1px solid #ced6eb
+			border-radius: 5px
+			background-color: #fff
+			box-sizing: border-box
+		input[type='checkbox']:checked:after
+			font-size: 16px
+			content: "•"
+			color: $accent
+			font-size: 40px
+
+.reg
+	position: absolute
+	bottom: 0
+	right: 0
+	color: $purple
+	font-size: 18px
+	img
+		height: 25px
+		margin-left: 10px
 
 .btn-bg
 	color: #fff
@@ -137,7 +191,6 @@ input
 	text-indent: 15px
 	border-radius: 3px
 	outline: none
-	color: $purple
 	&:focus::placeholder
 		color: #9094a0
 		transition: color .5s ease
@@ -152,11 +205,13 @@ input
 .first-input
 	width: 75%
 	float: left
+	color: $purple
 
 .entrance
 	width: 23%
 	float: right
 	text-indent: 7px
+	color: $purple
 	&::placeholder
 		font-size: 14px	
 
@@ -480,6 +535,7 @@ select
 	margin-top: 30px
 	input
 		width: auto
+		text-indent: 0
 	label
 		position: relative
 		display: block
@@ -511,7 +567,10 @@ select
 		box-sizing: border-box
 	input[type='checkbox']:checked:after
 		font-size: 16px
-		background-color: $accent
+		content: "\2714"
+		color: $accent
+		border: none
+		font-size: 21px
 
 .extra-wrapp
 	padding: 30px
@@ -519,3 +578,236 @@ select
 	text-align: center
 	background-color: $purple
 
+.information
+	background-image: url(../img/map.png)
+	background-size: cover
+	height: 100vh
+	box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.5) inset
+	position: relative
+
+.driver-wrapper
+	padding: 20px 15px
+	border-radius: 0 0 5px 5px
+	margin-top: 10px
+	background-color: #fff
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		height: 3px
+		background-color: $accent
+		top: 0
+		left: 0
+		width: 75%
+	.driver-info
+		padding-top: 20px
+		width: 40%
+		float: left
+	.driver-img
+		float: left
+		width: 30%
+		img
+			width: 100%
+	.driver-name
+		padding-left: 10px
+		width: 70%
+		float: right
+		text-align: left
+		font-size: 12px
+		.fa
+			color: $accent
+			margin-right: 5px
+		p
+			color: $purple
+			margin: 0
+			font-weight: 900
+
+.car-info
+	width: 60%
+	float: right
+	margin-bottom: 20px
+	.car-name 
+		text-align: right
+		float: left
+		font-size: 11px
+		width: 50%
+		color: #000
+		padding-right: 5px
+		p
+			margin: 0
+		img
+			width: 15%
+			margin-right: 10px
+	.kilometers
+		width: 30%
+		float: left
+		font-size: 11px
+		text-align: center
+		p
+			margin: 0
+			color: #000
+			font-weight: 900
+			font-size: 14px
+	.price
+		float: right
+		margin: 0
+		width: 20%
+		color: $accent
+		font-weight: 900
+		padding-left: 5px		
+
+.driver
+	margin-bottom: 15px
+
+.driver-buttons
+	text-align: right
+	display: inline-block
+	width: 100%
+	.accept-btn
+		color: $green
+		border: 1px solid $green
+		border-radius: 3px
+		padding: 5px 20px
+		font-size: 12px
+		display: inline-block
+	.cancel-btn
+		color: #db4949
+		border: 1px solid #db4949
+		border-radius: 3px
+		padding: 5px 20px
+		font-size: 12px
+		display: inline-block
+
+.map img
+	width: 100%
+
+.way-info
+	position: relative
+	padding: 20px
+	&:before
+		content: ''
+		position: absolute
+		height: 3px
+		background-color: $accent
+		top: 0
+		left: 0
+		width: 75%
+	.time
+		color: $accent
+
+.client-img, .driver-img, .time-img
+	margin: auto
+	width: 50%
+	height: 80px
+	img
+		width: 100%
+
+.client-name, .driver-car 
+	p
+		color: $purple
+		margin: 5px
+		font-size: 14px
+
+.client-name
+	.fa
+		color: $accent
+		margin-right: 5px
+
+.phone
+	display: inline-block
+	padding: 15px 0
+	border-top: 1px solid #dfe3f0
+	.probeg
+		color: #dfe3f0
+		margin-top: 4px
+
+.phone-btn
+	img
+		width: 100%
+
+.otmena
+	border: 1px solid #db4949
+	border-radius: 3px
+	padding: 5px 10px
+	font-size: 15px
+	display: inline-block
+	white-space: nowrap
+	margin-top: 10px
+	a
+		color: #db4949
+			
+.offer
+	background-color: #fff
+	border-radius: 5px
+	padding: 20px
+	.offer-header
+		font-weight: 900
+	.numbers-header
+		margin-top: 20px
+		color: $purple
+	.count
+		margin: 0 20px	
+	.minus
+		background-color: #fff
+		border: 1px solid #e7e7e7
+		color: #e7e7e7 		
+	.plus
+		background-color: #fff
+		border: 1px solid $purple
+		color: $purple
+	.driver-buttons
+		text-align: center
+		.accept-btn,.cancel-btn
+			display: block
+			color: #fff
+		.accept-btn
+			background-color: #00ad5d
+			padding: 10px 0
+			border-radius: 3px
+			font-weight: 900
+			margin-bottom: 10px
+			margin-top: 25px
+			font-size: 16px
+		.cancel-btn
+			background: 1px solid #db4949
+			color: #db4949	
+			padding: 10px 0
+			border-radius: 3px
+			font-weight: 900	
+			font-size: 16px
+
+.wait
+	font-size: 21px
+	font-weight: 900
+	margin-top: 25px
+
+.offer-wrapp
+	bottom: 15px
+	position: absolute
+
+.popup
+	display: none
+	background-color: #fff
+	padding: 20px 10px
+	border-radius: 5px
+	box-shadow: 0 0 0 1000px rgba(0,0,0,.5)
+	margin-bottom: 17px
+	.popup-header
+		color: $purple
+	.yes
+		background-color: #00ad5d
+		color: #fff
+		padding: 5px 45px
+		border-radius: 3px
+		margin: 20px
+		display: inline-block
+	.no
+		display: inline-block
+		border: 1px solid #db4949
+		color: #db4949
+		padding: 5px 45px
+		border-radius: 3px
+		margin: 20px		
+
+.no-border
+	border: none				
